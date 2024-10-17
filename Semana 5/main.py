@@ -32,7 +32,14 @@ def calculo():
 def finalizou():
     print('Finalizando...')
 
-if __name__ == '__main__': # nao é obrigatório esse if,
-                            # mas é considerado uma boa prática de programação
-    calculo()                # e poderia chamar a funcao calculo() diretamente
+'''
+    nao é obrigatório esse if, mas é considerado uma boa prática de programação
+    e poderia chamar a funcao calculo() diretamente
+    
+    o __name__ (atenção: sao dois underscore de cada lado!!) vai retornar '__main__'
+    onde o codigo for executado, por exemplo: executando esse código, esse arquivo python é o '__main__'
+    , se vc executar outro arquivo python (por exemplo: o calculadora.py) agora esse vai ser o '__main__'
+'''
+if __name__ == '__main__':                    
+    calculo()                
     finalizou()
